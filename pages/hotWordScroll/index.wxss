@@ -25,29 +25,15 @@
   width: 50rpx;
   font-size: 46rpx;
 }
-
 .input-box {
   width: 80%;
 }
-
-.input-content {
-  margin-left: 0;
-  height: 60rpx;
-  width: 70%;
-  position: absolute;
-  z-index: 2;
-  margin-left: 15rpx;
-  align-self: center;
-  font-size: 26rpx
-}
-
 .swiper_container {
   height: 60rpx;
   width: 80%;
   position: absolute;
   z-index: 1;
 }
-
 .swiper_item {
   font-size: 26rpx;
   color: #999;
