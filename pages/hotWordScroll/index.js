@@ -5,9 +5,23 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    msgList: [
+      { title: "朋友圈" },
+      { title: "文章" },
+      { title: "公共号" },
+      { title: "小程序" },
+      { title: "音乐" },
+      { title: "表情" },
+      { title: "订阅号" }],
+      index:0,
   },
-
+  //改变索引
+  changeIndex(e){
+    this.setData({
+      index:e.detail.current
+    })
+  },
+ 
   /**
    * 生命周期函数--监听页面加载
    */

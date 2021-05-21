@@ -1,1 +1,57 @@
-/* pages/hotWordScroll/index.wxss */
+/* 搜索框热词滚动wxss */
+.search-box {
+  height: 100rpx;
+  width: 100%;
+  background-color: darkred;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20rpx;
+  width: 90%;
+  height: 60rpx;
+  line-height: 60rpx;
+  /* vertical-align: middle;只对行内元素有效,块级元素无效 */
+  background-color: #ffffff;
+  border-radius: 30rpx;
+}
+
+.box-content>image {
+  height: 50rpx;
+  width: 50rpx;
+  font-size: 46rpx;
+}
+
+.input-box {
+  width: 80%;
+}
+
+.input-content {
+  margin-left: 0;
+  height: 60rpx;
+  width: 70%;
+  position: absolute;
+  z-index: 2;
+  margin-left: 15rpx;
+  align-self: center;
+  font-size: 26rpx
+}
+
+.swiper_container {
+  height: 60rpx;
+  width: 80%;
+  position: absolute;
+  z-index: 1;
+}
+
+.swiper_item {
+  font-size: 26rpx;
+  color: #999;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

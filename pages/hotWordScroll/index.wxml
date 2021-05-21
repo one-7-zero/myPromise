@@ -1,4 +1,12 @@
-<!--搜索框热词滚动-->
+<!--搜索框热词滚动wxml-->
 <view class="search-box">
-  <view class="iconfont icon-camera"></view>
+  <view class="box-content">
+    <image class="iconfont icon-search"></image>
+    <view class="input-box">
+      <swiper  class="swiper_container" circular autoplay vertical  current="{{currentIndex}}" bindchange="changeIndex">
+        <swiper-item wx:for="{{msgList}}" wx:key="index" class="swiper_item" >{{item.title}}</swiper-item>
+      </swiper>
+    </view>
+    <image class="iconfont icon-camera"></image>
+  </view>
 </view>
