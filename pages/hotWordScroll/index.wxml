@@ -1,0 +1,4 @@
+<!--搜索框热词滚动-->
+<view class="search-box">
+  <view class="iconfont icon-camera"></view>
+</view>
