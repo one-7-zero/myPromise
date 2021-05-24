@@ -1,6 +1,7 @@
 {
   "pages":[
     "pages/hotWordScroll/index",
+    "pages/hotWordScroll/search/index",
     "pages/index/index"
   ],
   "window":{
@@ -9,6 +10,5 @@
     "navigationBarTitleText": "myPromise",
     "navigationBarTextStyle":"black"
   },
-  "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

@@ -3,8 +3,8 @@
   <view class="box-content">
     <image class="iconfont icon-search"></image>
     <view class="input-box">
-      <swiper  class="swiper_container" circular autoplay vertical  current="{{currentIndex}}" bindchange="changeIndex">
-        <swiper-item wx:for="{{msgList}}" wx:key="index" class="swiper_item" >{{item.title}}</swiper-item>
+      <swiper  class="swiper_container" circular autoplay vertical  current="{{currentIndex}}" bindchange="changeIndex" >
+          <swiper-item  class="swiper_item" wx:for="{{msgList}}" wx:key="index" data-url="/pages/hotWordScroll/search/index?title={{item.title}}"  bindtap="toGo" >{{item.title}}</swiper-item>
       </swiper>
     </view>
     <image class="iconfont icon-camera"></image>

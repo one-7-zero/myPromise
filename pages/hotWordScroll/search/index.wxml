@@ -1,0 +1,6 @@
+<!--pages/hotWordScroll/search/index.wxml-->
+
+<view>
+  <text>{{searchName}}</text>
+</view>
+

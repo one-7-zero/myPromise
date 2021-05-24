@@ -1,39 +1,21 @@
-// pages/hotWordScroll/index.js
+// pages/hotWordScroll/search/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    msgList: [
-      { title: "朋友圈" },
-      { title: "文章" },
-      { title: "公共号" },
-      { title: "小程序" },
-      { title: "音乐" },
-      { title: "表情" },
-      { title: "订阅号" }],
-      index:0,
+    searchName:''
   },
-  //改变索引
-  changeIndex(e){
-    this.setData({
-      index:e.detail.current
-    })
-  },
-  toGo(e){
-    console.log('更改值',e);
-    let url = e.currentTarget.dataset.url
-    wx.navigateTo({
-      url
-    })
-  },
- 
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log('搜索名',options);
+    this.setData({
+      searchName:options.title
+    })
   },
 
   /**
